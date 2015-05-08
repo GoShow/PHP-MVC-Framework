@@ -1,0 +1,57 @@
+body>header {
+    background: #eee;
+}
+
+body>header>a {
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
+
+ul.menu {
+    vertical-align: top;
+    margin: 5px 0 0 0;
+    padding: 0;
+    display: inline-block;
+}
+
+ul.menu li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul.menu li:hover {
+    background: #ccc;
+}
+
+ul.menu li a {
+    text-decoration: none;
+}
+
+body>footer {
+    background: #eee;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+ul.info-messages {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background: #cfc;
+}
+
+ul.info-messages li {
+    display: block;
+}
+
+ul.error-messages {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    background: #fcc;
+}
+
+ul.error-messages li {
+    display: block;
+}
