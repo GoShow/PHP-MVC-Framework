@@ -1,9 +1,4 @@
-
-<?php foreach ($this->posts as $post) : ?>
-    <div class="post">
-        <h2><?= htmlspecialchars($post['title']) ?></h2>
-        <p><?= htmlspecialchars($post['text']) ?></p>
-        <p>Posted on: <?= htmlspecialchars($post['postedOn']) ?></p>
-    </div>
-<?php endforeach ?>
-<a href="/posts/create">[Create New]</a>
+<h1><?= htmlspecialchars($this->post['title']) ?></h1>
+<p><?= htmlspecialchars($this->post['text']) ?></p>
+<p>Posted on: <?= htmlspecialchars($this->post['postedOn']) ?></p>
+<p>Visits: <?= htmlspecialchars($this->post['visits']) ?></p>

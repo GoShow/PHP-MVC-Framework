@@ -1,5 +1,12 @@
+html, body {
+    min-height: 100%;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
 body>header {
     background: #eee;
+    padding-right: 1rem;
 }
 
 body>header>a {
@@ -9,7 +16,7 @@ body>header>a {
 
 ul.menu {
     vertical-align: top;
-    margin: 5px 0 0 0;
+    margin: 5px 0 0 1rem;
     padding: 0;
     display: inline-block;
 }
@@ -20,12 +27,16 @@ ul.menu li {
     padding: 5px;
 }
 
-ul.menu li:hover {
-    background: #ccc;
+
+ul.menu li:hover a{
+    color:#f00;
 }
 
 ul.menu li a {
     text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+    line-height: 47px;
 }
 
 body>footer {
@@ -54,4 +65,79 @@ ul.error-messages {
 
 ul.error-messages li {
     display: block;
+}
+
+fieldset {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: .5rem 0;
+    margin: 0 0 2rem 0;
+    font-size: 1rem;
+}
+
+textarea {
+    vertical-align: top;
+}
+
+.post {
+    border-bottom: 1px solid #000;
+    padding: 1rem;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+aside {
+    height: 100%;
+    background: #eee;
+    width: 22%;
+    float: left;
+    margin: 1rem 0;
+    padding: 0 1.5%
+}
+
+.content {
+    float: left;
+    width: 70%;
+    padding:0 2.5%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.post form {
+    display: inline-block;
+    width: 20%;
+}
+
+button, .button {
+    padding: .5rem 1rem;
+    border: 1px solid #999;
+    text-decoration: none;
+    background: #ccc;
+    font-size: 1rem;
+}
+
+button:hover, .button:hover {
+    background: #228b22;
+    color: #fff;
+    cursor: pointer;
+}
+
+.post form button {
+    width: 90%;
 }
