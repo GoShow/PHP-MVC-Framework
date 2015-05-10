@@ -1,6 +1,6 @@
 <aside>
     <h2>5 most popular tags</h2>
-    <?php foreach ($this->tags as $tag) : ?>
+    <?php foreach ($_SESSION['tags'] as $tag) : ?>
         <div class="tags">
             <p><?= htmlspecialchars($tag['tag']) ?> - <?= htmlspecialchars($tag['tagsCount']) ?> hits</p>
         </div>

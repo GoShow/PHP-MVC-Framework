@@ -141,3 +141,21 @@ button:hover, .button:hover {
 .post form button {
     width: 90%;
 }
+
+.logged {
+    float: right;
+    font-size: 1.5rem;
+    line-height: 75px;
+}
+
+
+
+.logged form {
+    display: inline-block;
+}
+
+.logout {
+    display: inline-block;
+    background: none;
+    bordeer-color: transparent;
+}

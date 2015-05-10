@@ -99,16 +99,4 @@ abstract class BaseController {
     protected function isAdmin() {
         return isset($_SESSION['isAdmin']);
     }
-
-    protected function authorize() {
-        if (! $this->isLoggedIn()) {
-            $this->redirect("users", "login");
-        }
-    }
-
-    protected function authorizeAdmin() {
-        if (! $this->isAdmin()) {
-            die('Administrator account is required!');
-        }
-    }
 }

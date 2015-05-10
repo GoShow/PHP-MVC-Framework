@@ -11,6 +11,13 @@ class HomeController extends BaseController {
     public function index() {
         $this->posts = $this->postsModel->getAll();
         $this->tags = $this->postsModel->getTags();
+        if(!isset($_SESSION['tags'])){
+            $_SESSION['tags'] = [];
+
+            foreach ($this->tags as $currentTag) {
+                array_push($_SESSION['tags'], $currentTag);
+            }
+        }
     }
 
 

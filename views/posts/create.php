@@ -8,7 +8,7 @@
         </label>
         <label>
             Post:
-            <textarea name="text" rows="15" required="required"></textarea>
+            <textarea name="text" rows="8" required="required"></textarea>
         </label>
         <label>
             Enter tags separated with space:
