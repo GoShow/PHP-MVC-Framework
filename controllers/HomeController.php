@@ -17,6 +17,13 @@ class HomeController extends BaseController {
             foreach ($this->tags as $currentTag) {
                 array_push($_SESSION['tags'], $currentTag);
             }
+        } else{
+            unset ($_SESSION['tags']);
+            $_SESSION['tags'] = [];
+
+            foreach ($this->tags as $currentTag) {
+                array_push($_SESSION['tags'], $currentTag);
+            }
         }
     }
 
